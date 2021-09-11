@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="60" height="34" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="2707">
+ <editorsettings>
+  <export target="objects/Screen7.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="objects.tsx"/>
+ <tileset firstgid="140" source="objects2.tsx"/>
+ <objectgroup id="13" name="sensors">
+  <object id="2694" name="sensor1" gid="132" x="64" y="224" width="128" height="32" rotation="90"/>
+  <object id="2695" name="sensor2" gid="132" x="832" y="672" width="128" height="32" rotation="90"/>
+  <object id="2696" name="sensor3" gid="132" x="832" y="928" width="128" height="32" rotation="90"/>
+ </objectgroup>
+ <objectgroup id="5" name="spikes">
+  <object id="1450" name="spikes1" gid="68" x="32" y="224" width="128" height="32" rotation="90">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="1487" name="spikes2" gid="68" x="800" y="672" width="128" height="32" rotation="90">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="1488" name="spikes3" gid="68" x="800" y="928" width="128" height="32" rotation="90">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="1511" name="staticSpikes2" gid="64" x="672" y="992" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="1512" name="staticSpikes1" gid="64" x="608" y="992" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="1594" name="timedSpikes" gid="70" x="1920" y="480" width="128" height="32" rotation="-90">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="brickwork">
+  <object id="2560" gid="106" x="0" y="32" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2561" gid="106" x="384" y="32" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2562" gid="106" x="768" y="32" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2563" gid="106" x="1152" y="32" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2564" gid="106" x="1536" y="32" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2565" gid="106" x="0" y="1088" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2566" gid="106" x="384" y="1088" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2568" gid="106" x="1536" y="1088" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2569" gid="106" x="64" y="1056" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2570" gid="106" x="448" y="1056" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2571" gid="111" x="0" y="1056" width="32" height="384">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2572" gid="111" x="32" y="1056" width="32" height="384">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2573" gid="111" x="0" y="672" width="32" height="384">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2574" gid="111" x="32" y="672" width="32" height="384">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2575" gid="110" x="0" y="288" width="32" height="256">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2576" gid="110" x="32" y="288" width="32" height="256">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2577" gid="94" x="64" y="1024" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2578" gid="94" x="320" y="1024" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2581" gid="92" x="576" y="1024" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2582" gid="104" x="608" y="1024" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2583" gid="104" x="672" y="1024" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2584" gid="103" x="768" y="1088" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2585" gid="103" x="800" y="1088" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2586" gid="94" x="864" y="1088" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2587" gid="94" x="1088" y="1088" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2588" gid="94" x="1632" y="1024" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2589" gid="94" x="1376" y="1024" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2590" gid="92" x="1344" y="1056" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2591" gid="106" x="1376" y="1056" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2592" gid="104" x="1760" y="1056" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2593" gid="111" x="1888" y="416" width="32" height="384">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2594" gid="111" x="1888" y="800" width="32" height="384">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2595" gid="110" x="1888" y="1056" width="32" height="256">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2596" gid="108" x="1344" y="1088" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2597" gid="94" x="1632" y="256" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2598" gid="94" x="1376" y="256" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2599" gid="94" x="1120" y="256" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2600" gid="94" x="864" y="256" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2601" gid="94" x="608" y="256" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2602" gid="94" x="384" y="256" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2604" gid="93" x="288" y="288" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2605" gid="103" x="384" y="288" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2606" gid="104" x="32" y="480" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2607" gid="104" x="32" y="448" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2608" gid="104" x="32" y="416" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2609" gid="93" x="800" y="608" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2610" gid="92" x="608" y="704" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2611" gid="92" x="640" y="704" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2612" gid="92" x="672" y="704" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2613" gid="92" x="384" y="800" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2614" gid="92" x="416" y="800" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2615" gid="92" x="448" y="800" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2616" gid="93" x="576" y="910.25" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2617" gid="92" x="192" y="704" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2618" gid="92" x="224" y="704" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2619" gid="92" x="256" y="704" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2620" gid="109" x="192" y="864" width="32" height="128">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2621" gid="103" x="192" y="736" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2622" gid="106" x="480" y="96" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2623" gid="106" x="480" y="64" width="384" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2624" gid="104" x="832" y="64" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2625" gid="104" x="832" y="96" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2626" gid="111" x="800" y="992" width="32" height="384">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2627" gid="103" x="800" y="1024" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2629" gid="92" x="864" y="832" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2630" gid="92" x="896" y="832" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2632" gid="92" x="1023.82" y="724.545" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2633" gid="92" x="1055.82" y="724.545" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2634" gid="92" x="1023.83" y="945.333" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2635" gid="92" x="1055.83" y="945.333" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2636" gid="92" x="1152" y="928" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2637" gid="92" x="1184" y="928" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2638" gid="92" x="1120" y="928" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2639" gid="92" x="1151.64" y="719.636" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2640" gid="92" x="1183.64" y="719.636" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2641" gid="92" x="1119.64" y="719.636" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2642" gid="111" x="1088" y="928" width="32" height="384">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2643" gid="109" x="1088" y="544" width="32" height="128">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2644" gid="94" x="1472" y="416" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2645" gid="94" x="1216" y="416" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2647" gid="93" x="1088" y="416" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2648" gid="94" x="832" y="448" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2649" gid="93" x="704" y="448" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2650" gid="94" x="1408" y="576" width="256" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2651" gid="93" x="1664" y="576" width="128" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2652" gid="103" x="1856" y="512" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2653" gid="103" x="1856" y="544" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2654" gid="103" x="1856" y="576" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2655" gid="103" x="1824" y="576" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2656" gid="103" x="1824" y="544" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2657" gid="92" x="1824" y="512" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2658" gid="92" x="1792" y="576" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2659" gid="103" x="832" y="1088" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2660" gid="103" x="832" y="832" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2661" gid="92" x="128" y="384" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2662" gid="92" x="96" y="384" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2663" gid="103" x="64" y="384" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2665" gid="110" x="1408" y="832" width="32" height="256">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2666" gid="92" x="1344" y="640" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2667" gid="92" x="1376" y="640" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2668" gid="92" x="1344" y="832" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2669" gid="92" x="1376" y="832" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2670" gid="103" x="1760" y="800" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2671" gid="103" x="1760" y="832" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2672" gid="103" x="1760" y="864" width="32" height="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2673" gid="115" x="159.75" y="464" width="64" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2674" gid="115" x="223.75" y="464" width="64" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2675" gid="115" x="384" y="576" width="64" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2676" gid="114" x="448" y="576" width="32" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2677" gid="114" x="1439.94" y="784" width="32" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2678" gid="115" x="1471.94" y="784" width="64" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2679" gid="115" x="1632" y="896" width="64" height="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2692" name="wall1" gid="77" x="192" y="864" width="128" height="32" rotation="90">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+  <object id="2693" name="wall2" gid="77" x="1760" y="864" width="128" height="32" rotation="90">
+   <properties>
+    <property name="bodyType" value="static"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="rails">
+  <object id="1527" gid="77" x="1192.17" y="156.083" width="128" height="16" rotation="90"/>
+  <object id="1528" gid="76" x="1192.17" y="138.388" width="32" height="16" rotation="90"/>
+  <object id="1529" gid="1073741900" x="1208.17" y="301.312" width="32" height="16" rotation="270"/>
+  <object id="1533" gid="1073741900" x="495.805" y="87.4591" width="32" height="16"/>
+  <object id="1534" gid="77" x="927.818" y="71.4545" width="416" height="16" rotation="-180"/>
+  <object id="1535" gid="76" x="943.734" y="71.4545" width="32" height="16" rotation="-180"/>
+  <object id="1537" gid="1073741900" x="312.221" y="319.999" width="32" height="16" rotation="90"/>
+  <object id="1538" gid="77" x="328.217" y="607.978" width="256" height="16" rotation="-90"/>
+  <object id="1539" gid="76" x="328.217" y="639.978" width="32" height="16" rotation="-90"/>
+  <object id="1540" gid="76" x="1047.94" y="1009.8" width="32" height="16" rotation="-90"/>
+  <object id="1541" gid="77" x="1047.94" y="993.889" width="416" height="16" rotation="-90"/>
+  <object id="1542" gid="1073741900" x="1031.94" y="550.5" width="32" height="16" rotation="90"/>
+  <object id="1569" gid="76" x="583.851" y="927.929" width="32" height="16" rotation="-90"/>
+  <object id="1570" gid="77" x="583.854" y="896" width="448.385" height="16" rotation="-90"/>
+  <object id="1571" gid="1073741900" x="567.858" y="415.635" width="32" height="16" rotation="90"/>
+  <object id="1577" gid="76" x="1287.81" y="927.981" width="32" height="16" rotation="-90"/>
+  <object id="1578" gid="77" x="1287.81" y="896.053" width="352.365" height="16" rotation="-90"/>
+  <object id="1579" gid="1073741900" x="1271.81" y="511.688" width="32" height="16" rotation="90"/>
+  <object id="1584" gid="76" x="1505.27" y="1034.89" width="32" height="16" rotation="-45"/>
+  <object id="1585" gid="77" x="1516.53" y="1023.63" width="458.234" height="16" rotation="-45"/>
+  <object id="1586" gid="1073741900" x="1850.72" y="666.884" width="32" height="16" rotation="135"/>
+  <object id="1590" gid="1073741900" x="1532" y="511.989" width="32" height="16" rotation="270"/>
+  <object id="1591" gid="77" x="1516" y="352" width="128" height="16" rotation="90"/>
+  <object id="1592" gid="76" x="1516" y="320" width="32" height="16" rotation="90"/>
+  <object id="1595" gid="76" x="848.17" y="408.379" width="32" height="16" rotation="-360"/>
+  <object id="1596" gid="77" x="880.079" y="408.371" width="392.183" height="16" rotation="-360"/>
+  <object id="1597" gid="1073741900" x="1304.29" y="392.5" width="32" height="16" rotation="-180"/>
+ </objectgroup>
+ <objectgroup id="7" name="blades">
+  <object id="1311" name="saw11" type="blades" gid="63" x="1605.17" y="83.8333" width="104.667" height="101.667">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="48"/>
+   </properties>
+  </object>
+  <object id="1312" name="saw0" type="blades" gid="63" x="1152" y="192" width="98" height="98">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="44"/>
+   </properties>
+  </object>
+  <object id="1352" name="saw8" type="blades" gid="63" x="1792" y="736" width="128" height="128">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="60"/>
+   </properties>
+  </object>
+  <object id="1360" name="saw5" type="blades" gid="63" x="986.184" y="1052.55" width="109" height="109">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="50"/>
+   </properties>
+  </object>
+  <object id="1364" name="saw1" type="blades" gid="63" x="859.984" y="152.545" width="142.395" height="146">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="68"/>
+   </properties>
+  </object>
+  <object id="1407" name="saw6" type="blades" gid="63" x="1481.5" y="371.273" width="84" height="84">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="36"/>
+   </properties>
+  </object>
+  <object id="1448" name="saw10" type="blades" gid="63" x="1399.33" y="281.662" width="99" height="96.1624">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="46"/>
+   </properties>
+  </object>
+  <object id="1474" name="saw2" type="blades" gid="63" x="256" y="392.667" width="128" height="128">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="60"/>
+   </properties>
+  </object>
+  <object id="1478" name="saw3" type="blades" gid="63" x="512" y="480" width="128" height="128">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="56"/>
+   </properties>
+  </object>
+  <object id="1500" name="saw9" type="blades" gid="63" x="1227.17" y="564.833" width="105.667" height="105.667">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="46"/>
+   </properties>
+  </object>
+  <object id="1550" name="saw4" type="blades" gid="63" x="1361" y="334.5" width="130" height="130" rotation="-180">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="radius" type="int" value="56"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="interactable">
+  <object id="2689" name="feather" gid="117" x="96" y="992" width="61.4375" height="81.9167"/>
+  <object id="2553" name="exit" gid="85" x="1760" y="224" width="95.4375" height="127.25"/>
+  <object id="2554" gid="89" x="1688" y="182.5" width="54" height="54"/>
+  <object id="2688" name="heart" gid="116" x="1814.42" y="990.917" width="52.5" height="52.5"/>
+  <object id="1181" x="25.7117" y="-64" width="407.333" height="62.6667">
+   <text pixelsize="50" wrap="1">Screen7</text>
+  </object>
+  <object id="2690" name="flagYes" gid="98" x="864" y="576" width="48" height="96"/>
+  <object id="2691" name="flagNo" gid="97" x="864" y="576" width="47.8333" height="95.6667"/>
+  <object id="2697" gid="214" x="36.6667" y="267.333" width="24.3333" height="24.3333"/>
+  <object id="2698" gid="214" x="36.6667" y="331.333" width="24.3333" height="24.3333"/>
+  <object id="2699" gid="214" x="804.417" y="1036.83" width="24.3333" height="24.3333"/>
+  <object id="2700" gid="214" x="804.417" y="972.833" width="24.3333" height="24.3333"/>
+  <object id="2701" gid="214" x="805.667" y="779.333" width="24.3333" height="24.3333"/>
+  <object id="2702" gid="214" x="805.667" y="715.333" width="24.3333" height="24.3333"/>
+  <object id="2703" gid="213" x="1891" y="393.333" width="26.6667" height="26.6667"/>
+  <object id="2705" gid="213" x="1891" y="457.333" width="26.6667" height="26.6667"/>
+ </objectgroup>
+</map>
